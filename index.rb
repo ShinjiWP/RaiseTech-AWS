@@ -50,17 +50,57 @@
 
 
 #連想配列　keyとvalue
-menu_list = {"らーめん" => "800円", "チャーハン" => "600円", "ビール" => "500円"}
-# puts menu_list["らーめん"]
-# puts menu_list["ビール"]
-
+# menu_list = {"らーめん" => "800円", "チャーハン" => "600円", "ビール" => "500円"}
 # menu_list["らーめん"] = "1000円"
-# puts menu_list["らーめん"]
 
-menu_list.each{
-    |menu,price|
-    p "#{menu}は#{price}です"
-}
+# menu_list.each{
+#     |menu,price|
+#     p "#{menu}は#{price}です"
+# }
 
-p menu_list.length
-p menu_list.empty?
+# p menu_list.length
+# p menu_list.empty?
+
+# numbers = [1,2,3,4,5,6]
+# sum = 0
+
+# numbers.each do |n|
+#     sum += n
+# end
+
+# p sum
+
+# a = [1,2,2,2,3,4,5,6,6,7]
+
+# # a.delete(2)
+# # p a
+
+# a.delete_if do |n|
+#     n.odd?
+# end
+# p a
+
+# numbers = [1,2,3,4,5]
+# new_numbers = []
+# numbers.each {|n| new_numbers << n * 10}
+# p new_numbers
+
+# numbers = [1,2,3,4,5]
+# new_numbers = numbers.map{|n| n * 10}
+# p new_numbers
+
+# numbers = [1,2,3,4,5,6]
+# even_numbers = numbers.select{|n| n.even?}
+# p even_numbers
+
+# numbers = [1,2,3,4,5,6]
+# even_numbers = numbers.reject{|n| n.even?}
+# p even_numbers
+
+# numbers = [1,2,3,4,5,6]
+# even_numbers = numbers.find{|n| n.even?}
+# p even_numbers
+
+
+lang = ['ruby' ,'python']
+p lang.map(&:upcase)
